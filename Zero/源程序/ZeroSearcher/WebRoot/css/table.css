@@ -1,0 +1,160 @@
+@CHARSET "UTF-8";
+//处理表格样式
+body {
+	font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica,
+		sans-serif;
+	color: #4f6b72;
+	background: #E6EAE9; 
+	}
+#header {
+	border-bottom: 1px dotted #B2BCC6;
+	height: 2em;
+}
+#header .strapline {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	color: #778899;
+	background-color: transparent;
+	float: right;
+	margin-right: 1em;
+	margin-top: 0.5em;
+}
+#header .logo {
+	float: left;
+	margin-left: 1.5em;
+	margin-top: 0.0em;
+}
+. scollercss { 
+	width : 865px;
+	height: 486px;
+	z-index: 1;
+	scrollbar-arrow-color: #bfd8fc;
+	scrollbar-base-color: #bfd8fc;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.btn3_mouseout {
+	BORDER-RIGHT: #2C59AA 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #2C59AA 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform . Microsoft .
+		Gradient(GradientType = 0, StartColorStr = #ffffff, EndColorStr =
+		#C3DAF5);
+	BORDER-LEFT: #2C59AA 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+.btn3_mouseover {
+	BORDER-RIGHT: #2C59AA 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #2C59AA 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform . Microsoft .
+		Gradient(GradientType = 0, StartColorStr = #ffffff, EndColorStr =
+		#D7E7FA);
+	BORDER-LEFT: #2C59AA 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+.btn3_mousedown {
+	BORDER-RIGHT: #FFE400 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #FFE400 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform . Microsoft .
+		Gradient(GradientType = 0, StartColorStr = #ffffff, EndColorStr =
+		#C3DAF5);
+	BORDER-LEFT: #FFE400 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #FFE400 1px solid
+}
+
+.btn3_mouseup {
+	BORDER-RIGHT: #2C59AA 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #2C59AA 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform . Microsoft .
+		Gradient(GradientType = 0, StartColorStr = #ffffff, EndColorStr =
+		#C3DAF5);
+	BORDER-LEFT: #2C59AA 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+#mytable {
+	width: 700px;
+	padding: 0;
+	margin: 0;
+}
+
+caption {
+	padding: 0 0 5px 0;
+	width: 700px;
+	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+}
+
+th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}
+
+td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	font-size: 11px;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+
+td.alt {
+	background: #F5FAFA;
+	color: #797268;
+}
+
+th.spec {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url(images/bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #f5fafa url(images/bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}

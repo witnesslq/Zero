@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.title{
+color:#FF0000;
+}
+.describe{
+font-size:12px;
+color:#666666;
+}
+.date{
+font-size:10px;
+color:#999999;
+}
+.tableform{
+background-color:#d0dff4;
+}
+
+.frame{
+width:800;
+left:200;
+height:1000;
+}

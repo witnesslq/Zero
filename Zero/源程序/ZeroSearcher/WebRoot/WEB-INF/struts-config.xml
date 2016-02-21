@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  <form-bean name="FileAddForm" type="com.zero.Action.FileAddForm" />  
+  <form-bean name="deleteForm" type="com.zero.Action.DeleteForm" />
+  <form-bean name="userForm" type="com.zero.Action.UserForm" /> 
+  </form-beans>
+  
+  
+  <global-exceptions />
+  <global-forwards />
+  
+  
+  <action-mappings >
+  
+  
+        <!-- 添加资源 -->
+        <action path="/resouceAdd"
+            type="com.zero.xml.ResourceAdd" 
+            name="SearchContentForm"
+            scope="request" 
+            validate="true" 
+            input="/index.jsp">
+            
+        </action>
+
+        <!-- 添加xml文件内容 -->
+        <action path="/fileadd"
+            type="com.zero.Action.FileAddAction"
+            name="FileAddForm"
+            scope="request" 
+            validate="false">
+            <forward name="succeed" path="/Manager/succeed.jsp"></forward>
+        </action>
+  <!-- 删除  XML  文件的内容 -->      
+    <action
+      attribute="deleteForm"
+      input="/Manager/submit.jsp"
+      name="deleteForm"
+      path="/delete"
+      scope="request"
+      type="com.zero.Action.DeleteAction" >
+     <forward name="resourceSuccess" path="/Manager/ok.jsp"/>
+    </action>
+    <action
+      attribute="userForm"
+      name="userForm"
+      path="/user"
+      scope="request"
+      type="com.zero.Action.UserAction" >
+      <forward name="mainPage" path="BOSS/OA.jsp"/>
+    </action>
+      
+   
+  </action-mappings>
+  
+  
+  <message-resources parameter="struts.ApplicationResources" />
+</struts-config>
+

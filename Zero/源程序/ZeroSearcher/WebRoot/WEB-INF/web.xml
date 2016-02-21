@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app>
+     <!-- 字符编码过滤器 -->
+	<filter>
+		<filter-name>SetCharacterEncoding</filter-name>
+		<filter-class>
+			com.zero.filters.SetCharacterEncodingFilter
+		</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>gbk</param-value>
+		</init-param>
+		<init-param>
+			<param-name>enable</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>SetCharacterEncoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+     <!-- 字符编码过滤器 -->
+
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Init</servlet-name>
+    <servlet-class>com.zero.Init.Init</servlet-class>
+    <load-on-startup>6</load-on-startup>
+  </servlet>
+
+    <!-- 上传文件的servlet设置 -->  
+     <servlet>       
+      <servlet-name>FileUpload</servlet-name>
+        
+       <servlet-class>com.zero.util.FileUpload</servlet-class>
+     </servlet>
+  <servlet>
+    <description>PinYinChange</description>
+    <display-name>PinYinChange</display-name>
+    <servlet-name>PinYinChange</servlet-name>
+    <servlet-class>com.zero.Servers.PinYinChange</servlet-class>
+    <load-on-startup>5</load-on-startup>
+  </servlet>
+       
+     <servlet-mapping>
+        <servlet-name>FileUpload</servlet-name>
+        <url-pattern>/updata</url-pattern>
+     </servlet-mapping>
+      
+
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Init</servlet-name>
+    <url-pattern>/servlet/Init</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PinYinChange</servlet-name>
+    <url-pattern>/PinYinChange</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <init-param>
+            <param-name>listings</param-name>
+            <param-value>true</param-value>
+        </init-param>
+
+</web-app>
+

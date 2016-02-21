@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+td,th {
+	font-size: 14px;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+
+
+*{ padding:0; margin:0; list-style:none; font-size:15px;}
+#nav{
+	margin:50px;
+	left: 319px;
+	top: -4px;
+	width: 444px;
+}
+#nav li{float:left; width:15.4%;text-align:center; margin:0 auto; list-style:none }
+#nav li a{display:block;cursor:pointer;cursor:hand;}
+#nav li a span{
+	margin:-20px 0 0 -40px;
+	position:absolute;
+	background:url(../images/kindtool.png);
+	no-repeat; display:block;
+	height:35px;
+	width:43px;
+}
+
+
